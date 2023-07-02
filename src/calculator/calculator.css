@@ -16,7 +16,7 @@
 
 /* all inputs tags styled here */
 
-.calculator form input {
+.calculator form input, button {
     cursor: pointer;
     border: none;
     outline: none;
@@ -51,6 +51,10 @@ form input.equal{
        color: orange;
 } 
 form input.inputColor{
+    color: orange;
+    font-weight: bold;
+}
+form button.inputColor{
     color: orange;
     font-weight: bold;
 }

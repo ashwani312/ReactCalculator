@@ -13,6 +13,7 @@ export default function Calculator() {
             setDisplayValue("")
             return;
         }
+        console.log(e.target.value);
         tick.play(); // tick sound
         displayValue += e.target.value;
         setDisplayValue(displayValue);
@@ -66,7 +67,7 @@ export default function Calculator() {
                         <input type="button" value="AC" className='inputColor' onClick={handleAllClear} />
                         <input type="button" value="DE" className='inputColor' onClick={handleDeleteOne} />
                         <input type="button" value="." className='inputColor' onClick={handleCalculator} />
-                        <input type="button" value="/" className='inputColor' onClick={handleCalculator} />
+                        <button type="button" value="/" className='inputColor' onClick={handleCalculator} >&#247;</button>
                     </div>
 
                     <div>
@@ -74,7 +75,7 @@ export default function Calculator() {
                         <input type="button" value="7" onClick={handleCalculator} />
                         <input type="button" value="8" onClick={handleCalculator} />
                         <input type="button" value="9" onClick={handleCalculator} />
-                        <input type="button" value="*" className='inputColor' onClick={handleCalculator} />
+                        <button type="button" value="*" className='inputColor' onClick={handleCalculator} >&#215; </button>
                     </div>
 
                     <div>
@@ -82,7 +83,7 @@ export default function Calculator() {
                         <input type="button" value="4" onClick={handleCalculator} />
                         <input type="button" value="5" onClick={handleCalculator} />
                         <input type="button" value="6" onClick={handleCalculator} />
-                        <input type="button" value="-" className='inputColor' onClick={handleCalculator} />
+                        <button type="button" value="-" className='inputColor' onClick={handleCalculator} >&#8722;</button>
                     </div>
 
                     <div>
