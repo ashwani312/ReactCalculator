@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 import './app.css';
 import Calculator from './calculator/Calculator';
 
 export default function App() {
   return (
     <div>
-      {/* calculator componant render here */}
+      {/* calculator componant rendered here */}
       <Calculator/>     
     </div>
   )
