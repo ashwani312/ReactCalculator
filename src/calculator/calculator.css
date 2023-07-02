@@ -55,6 +55,8 @@ form input.inputColor{
     font-weight: bold;
 }
 form button.inputColor{
+    text-align: center;
+  
     color: orange;
     font-weight: bold;
 }

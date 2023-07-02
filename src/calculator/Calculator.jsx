@@ -65,7 +65,7 @@ export default function Calculator() {
                     {/* buttons start from here (row-1) */}
                     <div>
                         <input type="button" value="AC" className='inputColor' onClick={handleAllClear} />
-                        <input type="button" value="DE" className='inputColor' onClick={handleDeleteOne} />
+                        <button type="button"  value="DE" className='inputColor delete' onClick={handleDeleteOne} > <i class="material-icons">&#xe14a;</i></button>
                         <input type="button" value="." className='inputColor' onClick={handleCalculator} />
                         <button type="button" value="/" className='inputColor' onClick={handleCalculator} >&#247;</button>
                     </div>
