@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './calculator.css';
-import start from '../music/start.mp3'
+import start from '../music/start.mp3'; // this is a tick sound for calculator
 
 export default function Calculator() {
 
@@ -18,11 +18,13 @@ export default function Calculator() {
         displayValue += e.target.value;
         setDisplayValue(displayValue)
     }
+
     //a function to clear all numbers
     const handleAllClear = () => {
         tick.play()
         setDisplayValue("")
     }
+
     // a function to clear one number
     const handleDeleteOne = () => {
         tick.play()

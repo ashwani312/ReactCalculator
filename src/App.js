@@ -5,7 +5,7 @@ import Calculator from './calculator/Calculator';
 export default function App() {
   return (
     <div>
-      {/* calculator componant */}
+      {/* calculator componant render here */}
       <Calculator/>     
     </div>
   )
